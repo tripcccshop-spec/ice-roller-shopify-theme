@@ -1,0 +1,25 @@
+ice-roller-dropship-theme/
+├── config/
+│   └── settings_data.json
+├── layout/
+│   └── theme.liquid
+├── templates/
+│   ├── index.json
+│   ├── product.json
+│   └── 404.json
+├── sections/
+│   ├── main-hero.liquid
+│   ├── featured-product.liquid
+│   ├── how-it-works.liquid
+│   ├── testimonials.liquid
+│   └── footer.liquid
+├── assets/
+│   ├── theme.css
+│   ├── theme.js
+│   ├── hero-video.mp4
+│   ├── logo.png
+│   └── favicon.ico
+├── locales/
+│   └── en.default.json
+└── config/
+    └── settings_schema.json
