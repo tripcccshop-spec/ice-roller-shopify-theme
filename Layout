@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html class="no-js" lang="{{ request.locale.iso_code }}">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>{{ page_title }} | Ice Roller Glow</title>
+  
+  {% if page_description %}
+    <meta name="description" content="{{ page_description | escape }}">
+  {% endif %}
+
+  <link rel="canonical" href="{{ canonical_url }}">
+  
+  {{ content_for_header }}
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Theme CSS -->
+  {{ 'theme.css' | asset_url | stylesheet_tag }}
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="{{ 'favicon.ico' | asset_url }}">
+</head>
+
+<body>
+  <a class="skip-to-content" href="#MainContent">Skip to content</a>
+
+  {% sections 'header' %}
+  
+  <main id="MainContent" role="main">
+    {{ content_for_layout }}
+  </main>
+
+  {% sections 'footer' %}
+
+  <!-- Theme JS -->
+  {{ 'theme.js' | asset_url | script_tag }}
+
+  {% render 'cart-drawer' %}
+  {% render 'price-range-filter' %}
+</body>
+</html>
