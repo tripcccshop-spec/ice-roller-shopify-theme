@@ -1,0 +1,33 @@
+{
+  "sections": {
+    "main-hero": {
+      "type": "main-hero",
+      "settings": {
+        "heading": "✨ Transform Your Skin in 60 Seconds",
+        "subheading": "50K+ Women Can't Stop Raving About This Game-Changing Ice Roller",
+        "button_label": "🛒 Get Yours Now - $19.99",
+        "button_link": "/products/facial-ice-roller"
+      }
+    },
+    "featured-product": {
+      "type": "featured-product",
+      "settings": {
+        "product": "gid://shopify/Product/1234567890"
+      }
+    },
+    "how-it-works": {
+      "type": "how-it-works",
+      "settings": {}
+    },
+    "testimonials": {
+      "type": "testimonials",
+      "settings": {}
+    }
+  },
+  "order": [
+    "main-hero",
+    "featured-product",
+    "how-it-works",
+    "testimonials"
+  ]
+}
